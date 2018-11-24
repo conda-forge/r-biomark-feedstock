@@ -14,16 +14,15 @@ source:
   sha256: 754c5d7696155264c7639035a57ea0e71b1d01fd184b45e3fa6a78af9638ccc5
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-  skip: true  # [win32]
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
   host:
     - r-base
     - r-mass
@@ -50,8 +49,7 @@ about:
     be used, one based on the stability of model coefficients under perturbation, and
     the other on higher criticism.'
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
