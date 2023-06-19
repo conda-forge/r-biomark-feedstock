@@ -1,11 +1,11 @@
-About r-biomark
-===============
+About r-biomark-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-biomark-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=BioMark
 
 Package license: GPL (>= 2)
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-biomark-feedstock/blob/main/LICENSE.txt)
 
 Summary: Variable selection methods are provided for several classification methods: the lasso/elastic net, PCLDA, PLSDA, and several t-tests. Two approaches for selecting cutoffs can be used, one based on the stability of model coefficients under perturbation, and the other on higher criticism.
 
